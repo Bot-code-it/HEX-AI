@@ -19,21 +19,18 @@ A lightweight, lightning-fast Python chatbot CLI powered by the **Groq API**. Bu
 
 ### 1. Prerequisites
 
-Make sure you have Python 3.8+ installed and a Groq API key (you can get one at [console.groq.com](https://console.groq.com)).
+Make sure you have Python 3.8+ installed and a Groq API key (you can get one at [console.groq.com](https://console.groq.com/keys)).
 
 ### 2. Installation
 
-Clone this repository and install the dependencies:
+Clone this repository and run setup.py:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-pip install groq python-dotenv
-
+python setup.py
 ```
 
 
-### 4. Run the Chatbot
+### 4. Run HEX-AI
 
 Start chatting right from your terminal:
 
@@ -47,11 +44,5 @@ python main.py
 ## 🛠️ Tech Stack
 
 * **Language:** Python
-* **LLM Engine:** Groq API (`llama-3.3-70b-versatile` / `mixtral-8x7b-32768`)
-* **Dependencies:** `groq`, `python-dotenv`
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://www.google.com/search?q=https://github.com/your-username/your-repo-name/issues).
+* **LLM Engine:** Groq API (`gpt-oss-20b`)
+* **Dependencies:** `requests`, `pylatexenc`, `pyperclip` & `iso3166`
