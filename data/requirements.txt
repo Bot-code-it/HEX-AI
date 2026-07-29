@@ -1,0 +1,4 @@
+requests
+pylatexenc
+pyperclip
+iso3166
