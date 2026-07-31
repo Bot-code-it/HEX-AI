@@ -30,7 +30,7 @@ python setup.py
 ```
 
 
-### 4. Run HEX-AI
+### 3. Run HEX-AI
 
 Start chatting right from your terminal:
 
