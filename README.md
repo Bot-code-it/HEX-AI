@@ -11,7 +11,7 @@ A lightweight, lightning-fast Python chatbot CLI powered by the **Groq API**. Bu
 
 * **⚡ Blazing Fast:** Leverages Groq’s high-speed LPU infrastructure for near-instant responses.
 * **🎯 Realtime information:** Can reply to any realtime query.
-* **⚙️ Easily Configurable:** Simple setup using standard environment variables.
+* **⚙️ Easily Configurable:** Simple setup and very-lightwieght.
 
 ---
 
