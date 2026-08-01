@@ -23,14 +23,22 @@ Make sure you have Python 3.8+ installed and a Groq API key (you can get one at 
 
 ### 2. Installation
 
-Clone this repository and run setup.py:
+**Clone this repository and install requirements:**
 
 ```bash
-python setup.py
+git clone https://github.com/Bot-code-it/HEX-AI.git
+```
+```bash
+python -r requirements.txt
 ```
 
+### 3. Setup API key and Instructions
 
-### 3. Run HEX-AI
+1. Copy your Groq API key from [console.groq.com](https://console.groq.com/keys), and paste it in the ```data/api.key``` file.
+
+2. Write the instructions for AI in ```data/instructions.txt``` file or you can skip this step as basic instructions are already written in the file.
+
+### 4. Run HEX-AI
 
 Start chatting right from your terminal:
 
