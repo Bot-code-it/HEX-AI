@@ -4,7 +4,7 @@ try:
 	from pyperclip import copy as Clipboard
 	from iso3166 import countries
 except:
-	print("Please run setup.py before running the code...")
+	print("Please install requirements before running the code...")
 	exit()
 from datetime import datetime
 from json import dumps as JsonDumps
@@ -58,13 +58,13 @@ def realtime_data():
 class HexAI:
 	def __init__(self):
 		self._set_country()
-		with open("data/api.key") as f:
-			self.headers={"Authorization": f"Bearer {f.read().strip()}","Content-Type":"application/json"}
 		try:
+			with open("data/api.key") as f:
+				self.headers={"Authorization": f"Bearer {f.read().strip()}","Content-Type":"application/json"}
 			with open("data/instructions.txt") as f:
 				self.instructions=f.read()
 		except:
-			print("Please run setup.py before running the code...")
+			print("Please run setup API key and instructions before running the code...")
 			exit()
 		with open("data/logo.txt","rb") as f:
 			self.logo=f.read().decode()
@@ -134,7 +134,7 @@ class Terminal:
 			if clean=="":
 				self.Color.ColoredPrint("Do not waste API calls...","red",end="\n\n")
 				continue
-			if clean in ["exit","terminate","quit","break","destruct","goodbye","bye"]:
+			if clean=="exit":
 				self.Color.ColoredPrint("Hex AI: ","blue",end="")
 				self.Color.ColoredPrint(choice(["Goodbye.","See ya.","Terminated.","Quitting.","Bye."]),"emrald",end="\n\n")
 				break
@@ -154,5 +154,7 @@ class Terminal:
 				self.Color.ColoredPrint(", ".join(tools),"grey",end="\n\n")
 			self.Color.ColoredPrint("Tokens used: ","slate",end="");self.Color.ColoredPrint(response["tokens"],"grey")
 			self.Color.ColoredPrint("Time taken: ","slate",end="");self.Color.ColoredPrint(response["time"],"grey",end="\n\n")
-if __name__=="__main__":
+def main():
 	Terminal().main()
+if __name__=="__main__":
+	main()
